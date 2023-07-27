@@ -19,8 +19,7 @@ url_request = requests.get(url)
 url_request_text = url_request.text
 
 
-
-
+soup = BeautifulSoup(url_request_text, "html.parser")
 
 
 
