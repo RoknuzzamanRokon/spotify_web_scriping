@@ -1,4 +1,6 @@
 from datetime import datetime, timedelta
+from bs4 import BeautifulSoup
+import requests
 
 user_input = input("When would you like to travel (YYYY-MM-DD format): ")
 
@@ -8,3 +10,24 @@ try:
 
 except ValueError:
     print("Invalid date format. Please use the YYYY-MM-DD format.")
+
+
+url = "https://www.billboard.com/charts/hot-100/2000-08-12/"
+
+url_request = requests.get(url)
+
+url_request_text = url_request.text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
